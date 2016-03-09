@@ -1,10 +1,11 @@
 .dropdown {
-  //something goes here that's important...
-  .dropdown {
-    //something goes here that's important as well...
+
+  &__options {
+    display: none;
   }
+
   &:hover {
-    .dropdown-options {
+    .dropdown__options {
       display: flex;
     }
   }

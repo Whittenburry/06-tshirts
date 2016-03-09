@@ -1,18 +1,41 @@
 .dropdown {
+  position: relative;
 
   &__options {
     display: none;
+    position: absolute;
+    right: 0%;
+    bottom: 105%;
+
+    text-align: center;
   }
 
   &:hover {
     .dropdown__options {
-      display: flex;
+      // both display: flex; & display: block; work for this assignment maybe?
+      // display: flex;
+      // flex-direction: column;
+      display: block;
+
+      background: $brand-white;
+
     }
   }
 }
 
-.dropdown-options-item {
+.dropdown__options-item {
+  padding: $gutter;
 
+  border-top: $border;
+  border-right: $border;
+  border-left: $border;
+
+  color: $brand-primary;
+
+  &:hover {
+    font-size: 1.2rem;
+
+  }
 }
 
 .shirt-color--pink {

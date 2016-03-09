@@ -8,16 +8,3 @@
 @import 'shop-item';
 @import 'shop-btn';
 @import 'dropdown';
-
-.outer-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-.container {
-  display: flex;
-  width: 100%;
-  max-width: $max-content-width;
-}

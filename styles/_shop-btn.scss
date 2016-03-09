@@ -1,0 +1,16 @@
+.shop-item__btns {
+  display: flex;
+}
+
+.shop-btn {
+  display: flex;
+  justify-content: center;
+  width: calc(100% / 5);
+
+  border-top: $border;
+  border-right: $border;
+
+  &:last-of-type {
+    border-right: 0;
+  }
+}

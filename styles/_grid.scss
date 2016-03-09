@@ -1,0 +1,32 @@
+.outer-container {
+  margin: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: $max-content-width;
+  margin: auto;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.grid-item {
+  width: calc(100% / 3 - #{$gutter} - #{$gutter});
+  max-width: $max-content-width;
+  min-width: 15rem;
+  margin: $gutter;
+  color: $brand-primary;
+
+
+}
+
+// @media (min-width: 460px) {
+//   .row {
+//   display: flex;
+//   flex-direction: column;
+// }

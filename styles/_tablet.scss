@@ -1,14 +1,17 @@
 .row {
   flex-direction: column;
+  align-items: center;
 }
 
 .grid-item {
-  width: 100%;
+  width: 70%;
+  margin: $gutter;
 }
 
 .shop-item {
   flex-direction: row;
   align-items: center;
+
   &__shirt {
     flex-shrink: 1;
   }
@@ -22,19 +25,47 @@
   }
 }
 
-.dropdown__options {
-  display: flex;
-  // display: none;
+.shop-btn {
+  padding: $gutter;
+  border: 0;
+  border-top: $border;
+  border-left: $border;
 
-  position: absolute;
-  bottom: 0%;
-  right: 100%;
+  &:first-of-type {
+    border-top: 0;
+  }
 }
 
 .dropdown {
+  display: flex;
+
+  &__options {
+
+    display: none;
+    position: absolute;
+    right: 100%;
+    bottom: 0;
+    align-items: center;
+    background: $brand-white;
+    color: $brand-primary;
+
+    &-item {
+      padding: $gutter;
+
+      border: 0;
+      border-right: $border;
+      border-bottom: $border;
+
+      &:first-of-type {
+        border-left: $border;
+      }
+    }
+  }
+
   &:hover {
     &__options {
       display: flex;
+      align-items: center;
     }
   }
 }

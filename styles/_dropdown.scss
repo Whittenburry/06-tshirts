@@ -5,7 +5,12 @@
     display: none;
     position: absolute;
     right: 0%;
-    bottom: 105%;
+    bottom: 100%;
+    border: $border;
+
+    flex-direction: column;
+
+    background: $brand-white;
 
     text-align: center;
   }
@@ -14,11 +19,7 @@
     .dropdown__options {
       // both display: flex; & display: block; work for this assignment maybe?
       // display: flex;
-      // flex-direction: column;
-      display: block;
-
-      background: $brand-white;
-
+      display: flex;
     }
   }
 }
@@ -27,14 +28,15 @@
   padding: $gutter;
 
   border-top: $border;
-  border-right: $border;
-  border-left: $border;
 
   color: $brand-primary;
 
+  &:first-of-type {
+    border-top: 0;
+  }
+
   &:hover {
     font-size: 1.2rem;
-
   }
 }
 

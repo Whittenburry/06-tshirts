@@ -41,35 +41,19 @@
 }
 
 .dropdown {
-  display: flex;
 
   &__options {
-    display: none;
-    position: absolute;
     right: 100%;
-    bottom: 0;
-    align-items: center;
-    background: $brand-white;
-    color: $brand-primary;
+    bottom: -8%;
+    flex-direction: row;
 
     &-item {
-      padding: $gutter;
-
       border: 0;
       border-right: $border;
-      border-bottom: $border;
 
-      &:first-of-type {
-        border-left: $border;
+      &:last-of-type {
+        border-right: 0;
       }
-    }
-  }
-
-  &:hover {
-
-    &__options {
-      display: flex;
-      align-items: center;
     }
   }
 }

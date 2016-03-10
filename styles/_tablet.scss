@@ -8,4 +8,33 @@
 
 .shop-item {
   flex-direction: row;
+  align-items: center;
+  &__shirt {
+    flex-shrink: 1;
+  }
+
+  &__info {
+    flex-shrink: 1;
+  }
+
+  &__btns {
+    flex-direction: column;
+  }
+}
+
+.dropdown__options {
+  display: flex;
+  // display: none;
+
+  position: absolute;
+  bottom: 0%;
+  right: 100%;
+}
+
+.dropdown {
+  &:hover {
+    &__options {
+      display: flex;
+    }
+  }
 }

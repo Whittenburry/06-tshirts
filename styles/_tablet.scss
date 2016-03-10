@@ -5,7 +5,6 @@
 
 .grid-item {
   width: 70%;
-  margin: $gutter;
 }
 
 .shop-item {
@@ -13,21 +12,26 @@
   align-items: center;
 
   &__shirt {
+    flex-grow: 1;
     flex-shrink: 1;
   }
 
   &__info {
+    flex-grow: 1;
     flex-shrink: 1;
   }
 
   &__btns {
     flex-direction: column;
+    position: relative;
   }
 }
 
 .shop-btn {
   padding: $gutter;
+
   border: 0;
+
   border-top: $border;
   border-left: $border;
 
@@ -40,7 +44,6 @@
   display: flex;
 
   &__options {
-
     display: none;
     position: absolute;
     right: 100%;
@@ -63,6 +66,7 @@
   }
 
   &:hover {
+
     &__options {
       display: flex;
       align-items: center;

@@ -6,13 +6,29 @@
     position: absolute;
     right: 0%;
     bottom: 100%;
-    border: $border;
-
     flex-direction: column;
 
+
+    border: $border;
     background: $brand-white;
 
     text-align: center;
+  }
+
+  &__options-item {
+    padding: $gutter;
+
+    border-top: $border;
+
+    color: $brand-primary;
+
+    &:first-of-type {
+      border-top: 0;
+    }
+
+    &:hover {
+      font-size: 1.2rem;
+    }
   }
 
   &:hover {
@@ -24,21 +40,21 @@
   }
 }
 
-.dropdown__options-item {
-  padding: $gutter;
-
-  border-top: $border;
-
-  color: $brand-primary;
-
-  &:first-of-type {
-    border-top: 0;
-  }
-
-  &:hover {
-    font-size: 1.2rem;
-  }
-}
+// .dropdown__options-item {
+//   padding: $gutter;
+//
+//   border-top: $border;
+//
+//   color: $brand-primary;
+//
+//   &:first-of-type {
+//     border-top: 0;
+//   }
+//
+//   &:hover {
+//     font-size: 1.2rem;
+//   }
+// }
 
 .shirt-color--pink {
   color: $pink;
